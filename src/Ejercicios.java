@@ -31,7 +31,7 @@ public class Ejercicios {
     }
     */
     //SUMA DE ELEMENTOS DE UN VECTOR
-    public static int sumavector(int[]vector,int indice){
+   /*public static int sumavector(int[]vector,int indice){
         int suma;
         if(indice==vector.length -1){
             suma = vector[indice];
@@ -40,6 +40,20 @@ public class Ejercicios {
 
         }
         return suma;
-    }
+    }*/
+   // invertir caracteres con recursividad
+    public static void main(String[] args) {
 
+        String palabra = "EJEMPLO gaa";
+        System.out.println(palabra);
+        System.out.println(invertirPalabra(palabra, palabra.length() - 1));
+    }
+    public static String invertirPalabra(String palabra, int longitud) {
+        if (longitud == 0) {
+            return  palabra.charAt(longitud)+"";
+
+        } else{
+            return palabra.charAt(longitud) + (invertirPalabra(palabra, longitud -1));
+        }
+    }
 }
