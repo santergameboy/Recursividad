@@ -1,6 +1,6 @@
 public class Ejercicios {
-    //Recursividad Clase 1
-    /*public static int factorial(int n){
+    /*Recursividad Clase 1
+    public static int factorial(int n){
         int factorial;
         if (n==1){
             factorial=n;
@@ -10,11 +10,11 @@ public class Ejercicios {
 
         return factorial;
     }
-    */
-    /*Maximo Comun Divisor mcd con algoritmo de Euclides Clase 2
-    a=412 ; b=184;
-     */
-    /*public static int mcd(int a , int b){
+
+    Maximo Comun; Divisor mcd; con algoritmo; de Euclides; Clase 2;
+    a=412 ; b=184;*/
+
+    public static int mcd(int a , int b){
         int mcd;
         if (a==b){
         mcd= b;
@@ -29,9 +29,9 @@ public class Ejercicios {
         }
         return mcd;
     }
-    */
+
     //SUMA DE ELEMENTOS DE UN VECTOR
-   /*public static int sumavector(int[]vector,int indice){
+   public static int sumavector(int[]vector,int indice){
         int suma;
         if(indice==vector.length -1){
             suma = vector[indice];
@@ -40,20 +40,6 @@ public class Ejercicios {
 
         }
         return suma;
-    }*/
-   // invertir caracteres con recursividad
-    public static void main(String[] args) {
-
-        String palabra = "EJEMPLO gaa";
-        System.out.println(palabra);
-        System.out.println(invertirPalabra(palabra, palabra.length() - 1));
     }
-    public static String invertirPalabra(String palabra, int longitud) {
-        if (longitud == 0) {
-            return  palabra.charAt(longitud)+"";
 
-        } else{
-            return palabra.charAt(longitud) + (invertirPalabra(palabra, longitud -1));
-        }
-    }
 }
